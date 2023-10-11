@@ -1,3 +1,5 @@
+# Infinity Support!!
+I love this game so I made it possible to simply refresh the page and get a new Country!!
 # Tradle
 
 Play this international wordle here: https://oec.world/en/tradle/!

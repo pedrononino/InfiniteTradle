@@ -24,9 +24,29 @@ import { SettingsData } from "../hooks/useSettings";
 import { useMode } from "../hooks/useMode";
 import { useCountry } from "../hooks/useCountry";
 import axios from "axios";
+// prettier-ignore
+/* eslint-disable prettier/prettier */
 
 function getDayString() {
-  return DateTime.now().toFormat("yyyy-MM-dd");
+  // prettier-ignore
+  const arroz = Math.floor(Math.random() * 9) + 1;
+  // prettier-ignore
+  const feijao = Math.floor(Math.random() * 28) + 1;
+  // prettier-ignore
+  const p = (c: number) => String(c).padStart(2, '0');
+  // prettier-ignore
+  const marmita = `2024-${p(arroz)}-${p(feijao)}`;
+  // prettier-ignore
+  console.log(marmita);
+  // prettier-ignore
+  return marmita
+  //return "2024-09-10"
+
+  // console.log(DateTime.now().toSeconds());
+  // const joao = DateTime.fromSeconds(1699000457).toFormat("yyyy-MM-dd");
+  // console.log(joao);
+
+  // return joao;
 }
 
 const MAX_TRY_COUNT = 6;
